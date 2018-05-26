@@ -86,13 +86,13 @@
       localStorage.setItem('items', JSON.stringify(items));
       populateList(items, itemsList);
     }
+      let labels = document.querySelectorAll('input[type="checkbox"]');
 
     function toggleAllTrue() {
       let obj = JSON.parse(localStorage.getItem('items'))
       obj.forEach(elem => elem.done = true);
 
       localStorage.setItem('items', JSON.stringify(obj));
-      let labels = document.querySelectorAll('input[type="checkbox"]');
       labels.forEach(label => label.setAttribute('checked', true));
     }
 
@@ -101,7 +101,6 @@
       obj.forEach(elem => elem.done = false);
 
       localStorage.setItem('items', JSON.stringify(obj));
-      let labels = document.querySelectorAll('input[type="checkbox"]');
       labels.forEach(label => label.removeAttribute('checked'));
     };
 

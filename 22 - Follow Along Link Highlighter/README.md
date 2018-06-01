@@ -1,1 +1,1 @@
-LIVE: https://silvervian.github.io/JavaScript30DayChallenge/01%20-%20JavaScript%20Drum%20Kit/index.html
+LIVE: https://silvervian.github.io/JavaScript30DayChallenge/22%20-%20Follow%20Along%20Link%20Highlighter/index.html

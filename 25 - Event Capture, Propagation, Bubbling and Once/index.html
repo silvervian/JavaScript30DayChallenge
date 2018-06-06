@@ -39,7 +39,26 @@
 
 <button></button>
 <script>
+  const divs = document.querySelectorAll('div');
+  const button = document.querySelector('button');
 
+  function logText(e) {
+    e.stopPropagation();
+    console.log(this.classList.value);
+  }
+
+  divs.forEach(div => div.addEventListener('click', logText, {
+    once: true
+  }));
+
+  function testButton() {
+    console.log('Klikaj');
+    
+  }
+
+  button.addEventListener('click', testButton, {
+    once: false
+  });
 </script>
 </body>
 </html>
